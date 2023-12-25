@@ -39,6 +39,11 @@ body {
     margin-left:32px;
 }
 
+.btn-menu:hover {
+    background-color: transparent;
+    color: black;
+}
+
 .btn-menu-secundary {
     text-transform: capitalize;
     background-color: transparent;
@@ -48,6 +53,11 @@ body {
     cursor: pointer;
     color: var(--cor-dark-1);
     margin-left:32px;
+}
+
+.btn-menu-secundary:hover {
+    background-color: var(--cor-primary);
+    color: white;
 }
 
 .titulo {
@@ -60,6 +70,7 @@ body {
     font-size: 20px;
     color: var(--cor-light-1);
     margin-bottom: 20px;
+    line-height: 30px;
 }
 
 #wrapper {
