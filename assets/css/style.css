@@ -1,13 +1,12 @@
 @charset 'UTF-8';
 
 :root {
-    --cor-primary: #63B592;
-    --cor-light-1: #628274;
-    --cor-light-2: #434F4A;
-    --cor-dark: #333333;
-    --cor-dark-1: #173327;
-    --cor-dark-2: #21332B;
-    --cor-divisa: #86baa3;
+    --cor-primary: #2AB991;
+    --cor-cinza: #F8F9FA;
+    --cor-borda: #C9E9DE;
+    --cor-footer: #333333;
+    --cor-titulo: #404040;
+    --cor-paragrafo: #404040;
 }
 
 * {
@@ -17,9 +16,9 @@
 }
 
 body {
-    background-color: #CFEADC;
     display: flex;
     justify-content: center;
+    border-top: 6px solid var(--cor-primary);
 }
 
 .link {
@@ -30,49 +29,51 @@ body {
 
 .btn-menu {
     text-transform: capitalize;
-    background-color: #48825D;
-    border: 2px solid #48825D;
+    background-color: var(--cor-primary);
+    border: 2px solid var(--cor-primary);
     border-radius: 20px;
     padding: 16px 24px;
     cursor: pointer;
-    color: var(--cor-dark-1);
+    color: white;
     margin-left:32px;
 }
 
 .btn-menu:hover {
     background-color: transparent;
+    color: var(--cor-primary);
 }
 
 .btn-menu-secundary {
     text-transform: capitalize;
     background-color: transparent;
-    border: 2px solid #48825D;
+    border: 2px solid var(--cor-primary);
     border-radius: 20px;
     padding: 16px 24px;
     cursor: pointer;
-    color: var(--cor-dark-1);
+    color: var(--cor-primary);
     margin-left:32px;
 }
 
 .btn-menu-secundary:hover {
-    background-color: #48825D;
+    background-color: var(--cor-primary);
+    color: white;
 }
 
 .titulo {
     font-size: 32px;
-    color: var(--cor-dark-1);
+    color: var(--cor-titulo);
     margin-bottom: 32px;
 }
 
 .paragrafo {
     font-size: 20px;
-    color: var(--cor-light-1);
+    color: var(--cor-paragrafo);
     margin-bottom: 20px;
     line-height: 30px;
 }
 
 #wrapper {
-    width: 1200px;
+    width: 1280px;
     display: flex;
     margin: 0 auto;
     background-color: white;
@@ -81,12 +82,14 @@ body {
 #navigatie {
     width: 15%;
     flex-flow: column;
-    overflow-y: scroll;
+    border-left: 1px solid var(--cor-borda);
+    border-right: 1px solid var(--cor-borda);
 }
 
 #navigatie #menu {
-    background-color: var(--cor-primary);
+    background-color: var(--cor-cinza);
     height: 100%;
+    overflow-y: scroll;
 }
 
 #navigatie li {
@@ -96,11 +99,12 @@ body {
 #navigatie a {
     text-transform: capitalize;
     padding: 12px;
-    border-bottom: 1px solid var(--cor-divisa);
+    color: var(--cor-primary);
 }
 
 #navigatie a:hover {
-    background-color: var(--cor-light-1);
+    background-color: var(--cor-primary);
+    color: white;
 }
 
 #main {
@@ -110,8 +114,8 @@ body {
 }
 
 #main #header {
-    background-color: var(--cor-primary);
-    height: 88px;
+    padding: 16px 0px;
+    background-color: var(--cor-cinza);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,35 +129,27 @@ body {
 }
 
 #main header #logo #ico-logo {
-    background-image: url('https://th.bing.com/th/id/OIP.f2J7GAB_mDz6l9lB5Jwq4AHaHc?w=204&h=205&c=7&r=0&o=5&pid=1.7');
+    background-image: url('./images/OIP-removebg-preview.png');
     background-size: cover;
-    background-color: var(--cor-primary);
-    background-blend-mode: overlay;
     height: 80px;
     width: 80px;
 }
 
-#main #header #logo .link{
-    color: black;
-    font-size: 48px;
-    font-style: italic;
-    
-}
-
 #main #header #box-pesquisa {
     background-color: transparent;
-    border: 2px solid #48825D;
+    border: 2px solid var(--cor-primary);
     width: 250px;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 32px;
+    margin-right: 32px;
 }
 
 #main #header #box-pesquisa input {
     background-color: transparent;
-    color: #48825D;
+    color: var(--cor-primary);
     border: 0;
     padding: 16px 24px;
 }
@@ -163,7 +159,7 @@ body {
 }
 
 #main #rodape {
-    background-color: var(--cor-dark);
+    background-color: var(--cor-footer);
     color: white;
     padding: 32px;
 }
