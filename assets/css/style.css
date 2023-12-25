@@ -129,7 +129,7 @@ body {
 }
 
 #main header #logo #ico-logo {
-    background-image: url('./images/OIP-removebg-preview.png');
+    background-image: url('../images/OIP-removebg-preview.png');
     background-size: cover;
     height: 80px;
     width: 80px;
